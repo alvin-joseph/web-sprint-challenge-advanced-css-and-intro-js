@@ -309,11 +309,10 @@ function lotsOfArt(array){
   let newArray = [];
   for(let i = 0; i < array.length; i++){
     if(array[i]["paintings"] > 100){
-      return newArray.push(array[i]["name"])
-    } else {
-      return newArray.push = "Not Available";
+      newArray.push(array[i]["name"]);
     }
   }
+  return newArray;
 }
 
 console.log('Task 7', lotsOfArt(artists));
